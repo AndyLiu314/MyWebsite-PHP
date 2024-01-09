@@ -6,8 +6,28 @@
     <title>Document</title>
 </head>
 <body>
+    <main>
+        <form action="action.php" method="post">
+            <label for="name">Your name:</label>
+            <input name="name" id="name" type="text">
+
+            <label for="age">Your age:</label>
+            <input name="age" id="age" type="number">
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
     <?php
+        $name = "Dani";
         echo "HelloWorld";
+        echo $name;
+
+        //get stuff from URL
+        //echo $_GET["name"];
+
+        $_SESSION["username"] = "Krossing";
+        echo $_SESSION["username"]
+
     ?>
 </body>
 </html>
