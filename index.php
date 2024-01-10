@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- form to fill and retrieve info from user --> 
     <main>
         <form action="action.php" method="post">
             <label for="name">Your name:</label>
@@ -18,12 +19,10 @@
         </form>
     </main>
     <?php
+        // testing PHP info
         $name = "Dani";
         echo "HelloWorld";
         echo $name;
-
-        //get stuff from URL
-        //echo $_GET["name"];
 
         $_SESSION["username"] = "Krossing";
         echo $_SESSION["username"]
