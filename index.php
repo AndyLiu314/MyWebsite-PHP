@@ -9,7 +9,7 @@
 <body>
     <!-- form to fill and retrieve info from user --> 
     <main>
-        <form action="#" method="post">
+        <form action="includes/formhandler.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
