@@ -35,12 +35,20 @@
     <?php
         // testing PHP info
         $name = "Dani";
+        $a = 3;
         echo "HelloWorld";
         echo $name;
 
         $_SESSION["username"] = "Krossing";
-        echo $_SESSION["username"]
+        echo $_SESSION["username"];
 
+        // testing match
+        $result = match ($a) {
+            1 => "One",
+            3, 4, 5 => "Bunch of Numbers",
+        };
+
+        echo $result;
     ?>
 </body>
 </html>
