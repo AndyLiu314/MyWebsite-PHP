@@ -37,19 +37,25 @@
         // testing PHP info
         $name = "Dani";
         $a = 3;
-        echo "HelloWorld";
-        echo $name;
+        //echo "HelloWorld";
+        //echo $name;
 
         $_SESSION["username"] = "Krossing";
-        echo $_SESSION["username"];
+        //echo $_SESSION["username"];
 
         // testing match
         $result = match ($a) {
             1 => "One",
             3, 4, 5 => "Bunch of Numbers",
         };
+        //echo $result;
 
-        echo $result;
+        // arrays in php
+        $fruits = ["waht", "awhd", "apple"];
+
+        array_splice($fruits, 2, 0, "crazy"); 
+        print_r($fruits);
+        
     ?>
 </body>
 </html>
